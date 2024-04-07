@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Arabesque</title>
+    <link rel="stylesheet" type="text/css" href="arabesque.css">
+    <script>
+        function redirectToContact() {
+            window.location.href = "menu arabesque.html";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cafe Arabesque</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#" onclick="redirectToContact()">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="banner">
+        <div class="container">
+            <h2>Welcome to Our Traditional Coffee Shop</h2>
+            <p>Experience the rich flavors of Tunisia</p>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Discover the heritage and passion behind our coffee.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p>
+                <strong>Address:</strong>
+                <br>Avenue Habib Bourguiba
+            </p>
+
+            <p>
+                <strong>Phone:</strong>
+                <br>+216 26 382 063
+            </p>
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25638.623378873366!2d10.827531251267246!3d36.55826182825882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1302bbe4018bbfa9%3A0xc6ae1bb2b7b0bad0!2sCaf%C3%A9%20Arabesque.%20H!5e0!3m2!1sen!2sfr!4v1707322249306!5m2!1sen!2sfr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <a class="facebook-icon" href="https://www.facebook.com/profile.php?id=100057195830038" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png" alt="Facebook" width="100">
+        </a>
+
+        <div id="language-selection">
+            <button id="language-btn">Language</button>
+            <div id="language-options" class="hidden">
+                <button onclick="translateTo('en')">English</button>
+                <button onclick="translateTo('fr')">French</button>
+                <button onclick="translateTo('ar')">Arabic</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="arabesque.js"></script>
+</body>
+</html>
