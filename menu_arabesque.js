@@ -33,12 +33,12 @@ function translateTo(language) {
             },
             items: {
                 cafeExpress: {
-                    name: "Cafe Express",
+                    name: "Expresso",
                     description: "Description: Strong brewed coffee",
                     price: "Price: 1.300 DT"
                 },
                 cafeCreme: {
-                    name: "Cafe Creme",
+                    name: "Cream coffee",
                     description: "Description: Coffee with milk",
                     price: "Price: 1.500 DT"
                 },
