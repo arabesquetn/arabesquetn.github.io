@@ -47,7 +47,7 @@ header {
 .translation-button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #5bc0de;
+    background-color: #f0ad4e;
     color: white;
     border: none;
     border-radius: 5px;
@@ -55,7 +55,7 @@ header {
 }
 
 .translation-button:hover {
-    background-color: #31b0d5;
+    background-color: #f0ad4e;
 }
 
 .dropdown-content {
@@ -129,4 +129,35 @@ header {
 .menu-item p {
     margin: 0;
     color: #777;
+}
+
+@media (max-width: 600px) {
+    .menu-container {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .back-button, .translation-button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .menu-section h2 {
+        font-size: 20px;
+    }
+
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-item img {
+        width: 100%;
+        height: auto;
+        margin: 0 0 10px 0;
+    }
+
+    .item-details {
+        text-align: left;
+    }
 }
