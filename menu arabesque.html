@@ -11,13 +11,15 @@
     <header>
         <h1>Welcome to Cafe Arabesque</h1>
         <p>Explore our delicious offerings</p>
-        <button class="back-button" onclick="history.back()">Back</button>
-        <div class="translation-dropdown">
-            <button class="translation-button">Language</button>
-            <div class="dropdown-content" id="dropdown-content">
-                <a href="#" onclick="translateTo('en')">English</a>
-                <a href="#" onclick="translateTo('ar')">Arabic</a>
-                <a href="#" onclick="translateTo('fr')">French</a>
+        <div class="button-container">
+            <button class="back-button" onclick="history.back()">Back</button>
+            <div class="translation-dropdown">
+                <button class="translation-button">Language</button>
+                <div class="dropdown-content" id="dropdown-content">
+                    <a href="#" onclick="translateTo('en')">English</a>
+                    <a href="#" onclick="translateTo('ar')">Arabic</a>
+                    <a href="#" onclick="translateTo('fr')">French</a>
+                </div>
             </div>
         </div>
     </header>
@@ -26,7 +28,7 @@
         <div class="menu-item">
             <img src="4.jpg" alt="Cafe Express">
             <div class="item-details">
-                <h3>Cafe Express</h3>
+                <h3>Expresso</h3>
                 <p>Description: Strong brewed coffee</p>
                 <p>Price: 1.300 DT</p>
             </div>
@@ -34,7 +36,7 @@
         <div class="menu-item">
             <img src="7.jpg" alt="Cafe Creme">
             <div class="item-details">
-                <h3>Cafe Creme</h3>
+                <h3>Cream coffee</h3>
                 <p>Description: Coffee with milk</p>
                 <p>Price: 1.500 DT</p>
             </div>
@@ -71,6 +73,9 @@
                 <p>Price: 1.800 DT</p>
             </div>
         </div>
+    </section>
+    <section class="menu-section">
+        <h2>Cold Beverages</h2>
         <div class="menu-item">
             <img src="granite fraise.jpeg" alt="Strawberry Granite">
             <div class="item-details">
@@ -79,9 +84,6 @@
                 <p>Price: 2.500 DT</p>
             </div>
         </div>
-    </section>
-    <section class="menu-section">
-        <h2>Cold Beverages</h2>
         <div class="menu-item">
             <img src="10.jpg" alt="Soft Drink">
             <div class="item-details">
