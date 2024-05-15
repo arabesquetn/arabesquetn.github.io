@@ -21,10 +21,13 @@ header {
     position: relative;
 }
 
-.back-button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.back-button, .translation-button {
     padding: 10px 20px;
     font-size: 16px;
     background-color: #f0ad4e;
@@ -34,28 +37,20 @@ header {
     cursor: pointer;
 }
 
-.back-button:hover {
+.back-button:hover, .translation-button:hover {
     background-color: #ec971f;
 }
 
 .translation-dropdown {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    position: relative;
 }
 
 .translation-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #f0ad4e;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: #5bc0de;
 }
 
 .translation-button:hover {
-    background-color: #f0ad4e;
+    background-color: #31b0d5;
 }
 
 .dropdown-content {
@@ -137,9 +132,14 @@ header {
         padding: 10px;
     }
 
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .back-button, .translation-button {
-        padding: 5px 10px;
-        font-size: 14px;
+        width: 100%;
+        margin-bottom: 10px;
     }
 
     .menu-section h2 {
