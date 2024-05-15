@@ -12,6 +12,14 @@
         <h1>Welcome to Cafe Arabesque</h1>
         <p>Explore our delicious offerings</p>
         <button class="back-button" onclick="history.back()">Back</button>
+        <div class="translation-dropdown">
+            <button class="translation-button">Language</button>
+            <div class="dropdown-content" id="dropdown-content">
+                <a href="#" onclick="translateTo('en')">English</a>
+                <a href="#" onclick="translateTo('ar')">Arabic</a>
+                <a href="#" onclick="translateTo('fr')">French</a>
+            </div>
+        </div>
     </header>
     <section class="menu-section">
         <h2>Hot Beverages</h2>
@@ -85,13 +93,13 @@
         <div class="menu-item">
             <img src="9.jpg" alt="Boga Mint">
             <div class="item-details">
-                 <h3>Boga Mint</h3>
+                <h3>Boga Mint</h3>
                 <p>Description: Mint-flavored drink</p>
                 <p>Price: 1.700 DT</p>
             </div>
         </div>
         <div class="menu-item">
-            <img src="2.jpg" alt="Orange Juice">
+            <img src="Photos arabesque/2.jpg" alt="Orange Juice">
             <div class="item-details">
                 <h3>Orange Juice</h3>
                 <p>Description: Freshly squeezed orange juice</p>
@@ -119,5 +127,6 @@
         </div>
     </section>
 </div>
+<script src="menu_arabesque.js"></script>
 </body>
 </html>
